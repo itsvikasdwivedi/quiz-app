@@ -1,0 +1,68 @@
+body {
+    background-color: #007bff;
+}
+
+#login-form , #signup-form {
+    height: 80vh;
+    width: 30%;
+    background-color: #007bff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    padding: 50px 36px;
+    border: 2px solid #ffffff;
+}
+
+#login-form *, #signup-form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+#login-form h1,#signup-form h1 {
+    text-align: center;
+    color: #ffffff;
+}
+#login-form p,#signup-form p{
+    padding: 15%;
+}
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #007bff;
+    border: 2px solid #ffffff !important;
+    border-radius: 4px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #007bff;
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #007bff !important;
+    /* color: #080710; */
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
