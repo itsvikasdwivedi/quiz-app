@@ -36,7 +36,7 @@ body {
     color: #ffffff;
 }
 #login-form p,#signup-form p{
-    padding: 15%;
+   margin: 10%;
 }
 label {
     display: block;

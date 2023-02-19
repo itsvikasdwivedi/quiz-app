@@ -136,7 +136,6 @@ function optionSelected(answer){
         option_list.children[i].classList.add("disabled");
          //once user select an option then disable all options
     }
- 
 }
 
 function showResult(){
