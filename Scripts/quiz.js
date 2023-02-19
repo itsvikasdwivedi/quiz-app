@@ -132,8 +132,7 @@ function optionSelected(answer){
          next_btn.classList.add("show"); 
         for(i=0; i < allOptions; i++){
             if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
-                option_list.children[i].setAttribute("class", "option correct"); 
-               
+                option_list.children[i].setAttribute("class", "option correct");             
             }
         }
     }
@@ -149,17 +148,21 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); 
     result_box.classList.add("activeResult"); 
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 7){
-    
-        let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    if (userScore == 10 ){
+        let scoreTag = '<span> Congrats 🎊, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag; 
     }
-    else if(userScore > 3){ 
-        let scoreTag = '<span>and nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    if (userScore > 8){
+    
+        let scoreTag = '<span> Awesome 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        scoreText.innerHTML = scoreTag; 
+    }
+    else if(userScore > 5){ 
+        let scoreTag = '<span> Nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ 
-        let scoreTag = '<span>and sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span> Sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
