@@ -119,26 +119,22 @@ function optionSelected(answer){
     
     let correcAns = questions[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
+    answer.classList.add("select");
     
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
         userScore += 1; //upgrading score value with 1
-        answer.classList.add("select");
    
         // console.log("Correct Answer");
         // console.log("Your correct answers = " + userScore);
     }else{
-        answer.classList.add("select"); //adding red color to correct selected option
-       
+        // answer.classList.add("select"); 
+    
          next_btn.classList.add("show"); 
-        for(i=0; i < allOptions; i++){
-            if(option_list.children[i].textContent == correcAns){ //if there is an option which is matched to an array answer 
-                option_list.children[i].setAttribute("class", "option correct");             
-            }
-        }
+    
     }
     for(i=0; i < allOptions; i++){
         option_list.children[i].classList.add("disabled");
-         //once user select an option then disabled all options
+         //once user select an option then disable all options
     }
  
 }

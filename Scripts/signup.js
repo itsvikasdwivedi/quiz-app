@@ -23,3 +23,4 @@ function signup() {
     alert("Signup successful. Please login.");
     // showLoginForm();
   }
+ 

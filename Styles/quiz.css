@@ -205,7 +205,9 @@ section .option_list .option{
     justify-content: space-between;
 }
 
-
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
 
 section .option_list .option:hover{
     color: #004085;
@@ -218,6 +220,10 @@ section .option_list .option.select{
     background: #007bff;
     border: 1px solid #c3e6cb;
     color: white;
+}
+
+section .option_list .option.disabled{
+    pointer-events: none;
 }
 
 section .option_list .option .icon{
