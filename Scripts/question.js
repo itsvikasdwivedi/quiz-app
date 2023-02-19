@@ -67,7 +67,7 @@ let questions = [
     ]
   },
   {
-    numb: 6,
+    numb: 7,
     question: "Which of the following is not a type of combinator?",
     answer: "background-color",
     options: [
@@ -78,36 +78,36 @@ let questions = [
     ]
   },
   {
-    numb: 6,
-    question: "The property in CSS used to change the background color of an element is",
-    answer: "background-color",
+    numb: 8,
+    question: "Which if the following CSS function allows us to perform calculations?",
+    answer: "calc() function",
     options: [
-      "bgcolor",
-      "color",
-      "background-color",
-      "All of the above",
+      "calc() function",
+      "calculator() function",
+      "calculate() function",
+      "cal() function"
     ]
   },
   {
-    numb: 6,
-    question: "The property in CSS used to change the background color of an element is",
-    answer: "background-color",
+    numb: 9,
+    question: "Which of the following CSS property is used to add stroke to the text?",
+    answer: "text-stroke property",
     options: [
-      "bgcolor",
-      "color",
-      "background-color",
-      "All of the above",
+      "text-stroke property",
+      "text-transform property",
+      "text-decoration property",
+      "None of the above",
     ]
   },
   {
-    numb: 6,
-    question: "The property in CSS used to change the background color of an element is",
-    answer: "background-color",
+    numb: 10,
+    question: "The CSS property used to specify the transparency of an element is -",
+    answer: "opacity",
     options: [
-      "bgcolor",
-      "color",
-      "background-color",
-      "All of the above",
+      "Hover",
+      "opacity",
+      "clearfix",
+      "overlay",
     ]
   },
 ];
